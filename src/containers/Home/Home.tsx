@@ -1,6 +1,7 @@
 import React from "react";
 import Name from "../../components/Name/Name";
 import Vacancy from "../../components/Vacancy/Vacancy";
+import Menu from "../../components/Menu/Menu";
 
 const HomePage = () => {
     const HomePageStyle = {
@@ -18,11 +19,8 @@ const HomePage = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        "flex-direction": "column"
-    }
-    const linkStyle = {
-        fontSize: "64px",
-        textDecoration: "none",
+        "flex-direction": "column",
+        marginTop: "15%"
     }
     return (
         <div className={"HomePage"} style={HomePageStyle}>
@@ -36,9 +34,7 @@ const HomePage = () => {
                 </h2>
                 <Name/>
             </div>
-            <div className={"Menu"}>
-                <a href={"/"} style={linkStyle}>Home</a>
-            </div>
+            <Menu/>
         </div>
     )
 }
