@@ -10,6 +10,7 @@ const Vacancy = (props: IVacancy) => {
         color: "#FFF",
         display: "block",
         fontSize: "24px",
+        "text-transform": "uppercase"
     }
     return <h3 style={h3Style}>{props.vacancy}</h3>
 }
