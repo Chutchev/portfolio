@@ -7,7 +7,7 @@ const HomePage = () => {
     const HomePageStyle = {
         height: "100%",
         display: "flex",
-        "flex-direction": "column"
+        "flex-direction": "column",
     }
     const h2Style = {
         fontFamily: "Audiowide",
@@ -21,6 +21,7 @@ const HomePage = () => {
         alignItems: "center",
         justifyContent: "center",
         "flex-direction": "column",
+        height: "75%"
     }
     return (
         <div className={"HomePage"} style={HomePageStyle}>
@@ -33,7 +34,9 @@ const HomePage = () => {
                     THE PORTFOLIO OF
                 </h2>
                 <Name/>
+
             </div>
+            <div></div>
         </div>
     )
 }

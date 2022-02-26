@@ -6,7 +6,7 @@ const Layout = (props: any) => {
         display: "flex",
         "flex-direction": "column",
         height: "100vh",
-        flexGrow: 2
+        // flexGrow: 2
     }
     return (
         <div className={"Layout"} style={layoutStyle}>
