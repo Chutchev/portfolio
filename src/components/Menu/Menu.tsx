@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Menu = ()=>{
     const linkStyle = {
@@ -6,10 +6,11 @@ const Menu = ()=>{
         textDecoration: "none",
         color: "#FFF",
         marginRight: "93px",
-        marginBottom: "29px"
+        marginBottom: "29px",
     }
     const menuStyle = {
-        marginTop: "20%",
+        display: "flex",
+        justifyContent: "center"
     }
     return (
         <div className={"Menu"} style={menuStyle}>

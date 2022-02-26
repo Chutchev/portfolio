@@ -5,7 +5,9 @@ import Menu from "../../components/Menu/Menu";
 
 const HomePage = () => {
     const HomePageStyle = {
-        height: "100%"
+        height: "100%",
+        display: "flex",
+        "flex-direction": "column"
     }
     const h2Style = {
         fontFamily: "Audiowide",
@@ -13,14 +15,12 @@ const HomePage = () => {
         display: "block",
         fontSize: "32px",
         lineHeight: "82px",
-        "flex-direction": "row"
     }
     const nameStyle = {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         "flex-direction": "column",
-        marginTop: "15%"
     }
     return (
         <div className={"HomePage"} style={HomePageStyle}>
@@ -34,7 +34,6 @@ const HomePage = () => {
                 </h2>
                 <Name/>
             </div>
-            <Menu/>
         </div>
     )
 }
