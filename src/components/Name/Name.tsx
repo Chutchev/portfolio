@@ -6,9 +6,9 @@ const Name = () => {
         fontFamily: "Audiowide",
         color: "#FFF",
         display: "block",
-        fontSize: "256px",
-        lineHeight: "82px",
-        "flex-direction": "row"
+        fontSize: "64px",
+        "flex-direction": "row",
+        margin: "0px"
     }
     const lineStyle = {
         height: "3px",

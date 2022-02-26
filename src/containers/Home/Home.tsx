@@ -11,7 +11,7 @@ const HomePage = () => {
         fontFamily: "Audiowide",
         color: "#FFF",
         display: "block",
-        fontSize: "128px",
+        fontSize: "32px",
         lineHeight: "82px",
         "flex-direction": "row"
     }

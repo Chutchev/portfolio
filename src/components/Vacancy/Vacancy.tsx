@@ -9,7 +9,7 @@ const Vacancy = (props: IVacancy) => {
         fontFamily: "Audiowide",
         color: "#FFF",
         display: "block",
-        fontSize: "64px",
+        fontSize: "24px",
         "flex-direction": "column"
     }
     return <h3 style={h3Style}>{props.vacancy}</h3>

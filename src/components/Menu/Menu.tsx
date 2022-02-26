@@ -2,13 +2,14 @@ import React from "react";
 
 const Menu = ()=>{
     const linkStyle = {
-        fontSize: "64px",
+        fontSize: "24px",
         textDecoration: "none",
         color: "#FFF",
         marginRight: "93px",
+        marginBottom: "29px"
     }
     const menuStyle = {
-        marginTop: "25%"
+        marginTop: "20%",
     }
     return (
         <div className={"Menu"} style={menuStyle}>
