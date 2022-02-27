@@ -1,5 +1,6 @@
 import React from "react";
 import './namestyle.css'
+import YellowNeon from "./NeonAnimation";
 
 const Name = () => {
 
@@ -12,18 +13,21 @@ const Name = () => {
         margin: "0px"
     }
     const lineStyle = {
-        animation: "FlashAnimation 1s linear infinite",
-        height: "3px",
+        animation: "neon 1s linear infinite",
+        borderRadius: "2px",
+        height: "4px",
         width: "100%",
         backgroundColor: "#FFF"
     }
     return (
         <div>
-            <div className={"line"} style={lineStyle}/>
+            <YellowNeon />
+                <div className={"line"} style={lineStyle}/>
+
             <h1 style={h1Style}>
                 Ivan Chutchev
             </h1>
-            <div className={"line"} style={lineStyle}/>
+                <div className={"line"} style={lineStyle}/>
         </div>
 
     )
