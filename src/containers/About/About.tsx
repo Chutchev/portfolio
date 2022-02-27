@@ -32,15 +32,17 @@ const AboutPage = () => {
                 <Name/>
             </div>
             <div>
-                <div className={"Vacancy"}>
-                    <Vacancy vacancy={"QA Automation Engineer"}/>
-                    <Vacancy vacancy={"Python Developer"}/>
-                </div>
                 <div className={"content"} style={contentStyle}>
                     <div className={"Photo"} style={photoStyle}>
                         <img src={logo} alt={"me.jpg"} style={imageStyle}/>
                     </div>
-                    <Description/>
+                    <div style={{ width: "70%", marginRight: "3%",}}>
+                        <div className={"Vacancy"}>
+                            <Vacancy vacancy={"QA Automation Engineer"}/>
+                            <Vacancy vacancy={"Python Developer"}/>
+                        </div>
+                        <Description/>
+                    </div>
                 </div>
             </div>
 

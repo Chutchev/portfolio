@@ -3,8 +3,6 @@ import React from "react";
 
 const Description = () => {
     const descriptionStyle = {
-        width: "70%",
-        marginRight: "3%",
         fontSize: "24px",
         "text-transform": "uppercase",
         color: "#FFF",
