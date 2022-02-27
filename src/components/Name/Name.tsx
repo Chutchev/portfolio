@@ -1,7 +1,8 @@
 import React from "react";
-
+import './namestyle.css'
 
 const Name = () => {
+
     const h1Style = {
         fontFamily: "Audiowide",
         color: "#FFF",
@@ -11,9 +12,10 @@ const Name = () => {
         margin: "0px"
     }
     const lineStyle = {
+        animation: "FlashAnimation 1s linear infinite",
         height: "3px",
         width: "100%",
-        backgroundColor: "#484848"
+        backgroundColor: "#FFF"
     }
     return (
         <div>

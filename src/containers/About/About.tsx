@@ -8,6 +8,7 @@ const AboutPage = () => {
     const contentStyle = {
         display: "flex",
         marginTop: "51px",
+        marginBottom: "53px"
     }
     const nameStyle = {
         display: "flex",
@@ -19,12 +20,13 @@ const AboutPage = () => {
     const imageStyle = {
         borderRadius: "34px",
         width: "100%",
+        opacity: "75%"
     }
     const photoStyle = {
         display: "flex",
         marginLeft: "3%",
         marginRight: "3%",
-        width: "30%"
+        width: "27%"
     }
     return (
         <div style={{height: "100%"}}>
@@ -36,7 +38,7 @@ const AboutPage = () => {
                     <div className={"Photo"} style={photoStyle}>
                         <img src={logo} alt={"me.jpg"} style={imageStyle}/>
                     </div>
-                    <div style={{ width: "70%", marginRight: "3%",}}>
+                    <div style={{ width: "73%", marginRight: "3%",}}>
                         <div className={"Vacancy"}>
                             <Vacancy vacancy={"QA Automation Engineer"}/>
                             <Vacancy vacancy={"Python Developer"}/>

@@ -10,21 +10,23 @@ import {
 } from "react-router-dom";
 import AboutPage from "./containers/About/About";
 import Layout from "./containers/Layout/Layout";
-
+import {Fade} from "react-awesome-reveal";
 
 function App() {
     return (
         <div className="App">
-            <Layout>
-                <Router>
-                    <Routes>
-                        <Route path="" element={<HomePage/>}/>
-                        <Route path="about" element={<AboutPage/>}/>
-                        {/*<Route path="projects" element={<div>projects</div>}/>*/}
-                        {/*<Route path="contacts" element={<div>Contacts</div>}/>*/}
-                    </Routes>
-                </Router>
-            </Layout>
+            <Fade>
+                <Layout>
+                    <Router>
+                        <Routes>
+                            <Route path="" element={<HomePage/>}/>
+                            <Route path="about" element={<AboutPage/>}/>
+                            {/*<Route path="projects" element={<div>projects</div>}/>*/}
+                            {/*<Route path="contacts" element={<div>Contacts</div>}/>*/}
+                        </Routes>
+                    </Router>
+                </Layout>
+            </Fade>
         </div>
     );
 }

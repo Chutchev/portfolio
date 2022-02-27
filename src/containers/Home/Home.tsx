@@ -2,6 +2,8 @@ import React from "react";
 import Name from "../../components/Name/Name";
 import Vacancy from "../../components/Vacancy/Vacancy";
 import Menu from "../../components/Menu/Menu";
+import {Zoom} from "react-awesome-reveal";
+
 
 const HomePage = () => {
     const HomePageStyle = {
@@ -26,15 +28,18 @@ const HomePage = () => {
     return (
         <div className={"HomePage"} style={HomePageStyle}>
             <div className={"Vacancy"}>
-                <Vacancy vacancy={"QA Automation Engineer"}/>
-                <Vacancy vacancy={"Python Developer"}/>
+                <Zoom cascade={true}>
+                    <Vacancy vacancy={"QA Automation Engineer"}/>
+                    <Vacancy vacancy={"Python Developer"}/>
+                </Zoom>
             </div>
             <div className={"myName"} style={nameStyle}>
-                <h2 style={h2Style}>
-                    THE PORTFOLIO OF
-                </h2>
+                <Zoom cascade={true} delay={1000}>
+                    <h2 style={h2Style}>
+                        THE PORTFOLIO OF
+                    </h2>
+                </Zoom>
                 <Name/>
-
             </div>
             <div></div>
         </div>
