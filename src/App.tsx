@@ -11,13 +11,12 @@ import {
 import AboutPage from "./containers/About/About";
 import Layout from "./containers/Layout/Layout";
 import {Fade} from "react-awesome-reveal";
-import YellowNeon from "./components/Name/NeonAnimation";
+
 
 function App() {
     return (
         <div className="App">
             <Fade>
-                <YellowNeon/>
                 <Layout>
                     <Router>
                         <Routes>

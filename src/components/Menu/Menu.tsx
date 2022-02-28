@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Link from "./MenuLink";
 
 const Menu = ()=>{
     const linkStyle = {
@@ -14,10 +15,10 @@ const Menu = ()=>{
     }
     return (
         <div className={"Menu"} style={menuStyle}>
-            <a href={"/"} style={linkStyle}>HOME</a>
-            <a href={"/about"} style={linkStyle}>ABOUT</a>
-            <a href={"/projects"} style={linkStyle}>PROJECTS</a>
-            <a href={"/contacts"} style={linkStyle}>CONTACTS</a>
+            <Link href={"/"} text={"home"}/>
+            <Link href={"/about"} text={"about"}/>
+            <Link href={"/projects"} text={"projects"}/>
+            <Link href={"/contacts"} text={"contacts"}/>
         </div>
     )
 }

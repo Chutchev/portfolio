@@ -1,5 +1,4 @@
 import React from "react";
-import './namestyle.css'
 import styled, {keyframes} from "styled-components"
 import YellowNeonLine from "../NeonLine/YellowNeonLine";
 
