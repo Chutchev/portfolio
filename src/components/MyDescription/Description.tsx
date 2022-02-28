@@ -1,6 +1,5 @@
 import React from "react";
 import styled, {keyframes} from "styled-components";
-import {Fade} from "react-awesome-reveal";
 
 
 interface IDescription {
@@ -10,30 +9,18 @@ interface IDescription {
 
 const DescriptionAnimationStart = keyframes`
 0% {
-    transform: translateY(-1000000px);
-}
-20% {
-    transform: translateY(-60000px);
+    transform: translateY(-100%);
 }
 100% {
-    display: none;
+    display: translateY(0px);
 }
 `
 const DescriptionAnimationEnd = keyframes`
 0% {
-    transform: translateY(-100000000px);
-}
-20% {
-    transform: translateY(-60000px);
-}
-40% {
-    transform: translateY(-20000px);
-}
-60% {
-    transform: translateY(-500px);
+    transform: translateY(-100%);
 }
 100% {
-    display: none;
+    display: translateY(0px);
 }
 `
 
