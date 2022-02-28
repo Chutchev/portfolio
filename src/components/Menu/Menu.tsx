@@ -2,13 +2,6 @@ import React, {useState} from "react";
 import Link from "./MenuLink";
 
 const Menu = ()=>{
-    const linkStyle = {
-        fontSize: "24px",
-        textDecoration: "none",
-        color: "#FFF",
-        marginRight: "93px",
-        marginBottom: "29px",
-    }
     const menuStyle = {
         display: "flex",
         justifyContent: "center"

@@ -1,17 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 
 interface IVacancy {
     vacancy: string
 }
 
+const HVacancy = styled.h3`
+    font-famaly: Audiowide;
+    color: #FFFFFF;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+`
+
 const Vacancy = (props: IVacancy) => {
-    const h3Style = {
-        fontFamily: "Audiowide",
-        color: "#FFF",
-        display: "block",
-        fontSize: "24px",
-        "text-transform": "uppercase"
-    }
-    return <h3 style={h3Style}>{props.vacancy}</h3>
+    return <HVacancy>{props.vacancy}</HVacancy>
+
 }
 export default Vacancy

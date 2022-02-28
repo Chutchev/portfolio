@@ -12,13 +12,6 @@ const Name = () => {
         "flex-direction": "row",
         margin: "0px"
     }
-    const lineStyle = {
-        animation: "neon 1s linear infinite",
-        borderRadius: "2px",
-        height: "4px",
-        width: "100%",
-        backgroundColor: "#FFF"
-    }
     return (
         <div>
             <YellowNeonLine/>
