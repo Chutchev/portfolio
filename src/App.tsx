@@ -11,6 +11,7 @@ import {
 import AboutPage from "./containers/About/About";
 import Layout from "./containers/Layout/Layout";
 import {Fade} from "react-awesome-reveal";
+import Contact from "./containers/Contacts/Contacts";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
                             <Route path="" element={<HomePage/>}/>
                             <Route path="about" element={<AboutPage/>}/>
                             {/*<Route path="projects" element={<div>projects</div>}/>*/}
-                            {/*<Route path="contacts" element={<div>Contacts</div>}/>*/}
+                            <Route path="contacts" element={<Contact/>} />
                         </Routes>
                     </Router>
                 </Layout>

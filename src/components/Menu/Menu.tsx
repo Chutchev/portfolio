@@ -8,10 +8,10 @@ const Menu = ()=>{
     }
     return (
         <div className={"Menu"} style={menuStyle}>
-            <Link href={"/"} text={"home"}/>
-            <Link href={"/about"} text={"about"}/>
-            <Link href={"/projects"} text={"projects"}/>
-            <Link href={"/contacts"} text={"contacts"}/>
+            <Link href={"/"}>home</Link>
+            <Link href={"/about"}>about</Link>
+            <Link href={"/projects"}>projects</Link>
+            <Link href={"/contacts"}>contacts</Link>
         </div>
     )
 }

@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 interface ILink {
     href: string,
-    text: string
+    children: React.ReactNode,
+    target?: string
 }
 
 const ALink = styled.a`
@@ -19,8 +20,8 @@ const ALink = styled.a`
         {
 `
 const Link = (props:ILink) => {
-
-    return <ALink href={props.href}>{props.text}</ALink>
+    const target = props.target? props.target: "_self"
+    return <ALink href={props.href} target={target}>{props.children}</ALink>
 }
 
 export default Link
