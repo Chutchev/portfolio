@@ -1,6 +1,7 @@
 import React from "react";
 import './namestyle.css'
-import YellowNeon from "./NeonAnimation";
+import styled, {keyframes} from "styled-components"
+import YellowNeonLine from "../NeonLine/YellowNeonLine";
 
 const Name = () => {
 
@@ -21,13 +22,11 @@ const Name = () => {
     }
     return (
         <div>
-            <YellowNeon />
-                <div className={"line"} style={lineStyle}/>
-
+            <YellowNeonLine/>
             <h1 style={h1Style}>
                 Ivan Chutchev
             </h1>
-                <div className={"line"} style={lineStyle}/>
+            <YellowNeonLine/>
         </div>
 
     )
