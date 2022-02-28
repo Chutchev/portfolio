@@ -6,7 +6,7 @@ interface IVacancy {
 }
 
 const HVacancy = styled.h3`
-    font-famaly: Audiowide;
+    font-family: Audiowide;
     color: #FFFFFF;
     display: block;
     font-size: 24px;
