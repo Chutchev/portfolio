@@ -14,17 +14,20 @@ const Contacts = () => {
         alignItems: "center",
         justifyContent: "center",
         "flex-direction": "column",
-        marginTop: "1%"
+        marginTop: "1%",
     }
-    return (<div>
+    return (<div style={{height: "100vh"}}>
         <div className={"myName"} style={nameStyle}>
             <Name/>
         </div>
         <div className={"content"} style={{marginTop: "7%"}}>
-            <Link href={"https://t.me/chutchev"} target={"_blanc"}><Contact icon={<Telegram />} text={"@Telegram"}/></Link>
-            <Link href={""} target={"_blanc"}><Contact icon={<LinkedIn />} text={"linkedIn"}/></Link>
-            <Link href={"mailto:ichutchev98@gmail.com?subject=Собеседование"}><Contact icon={<Gmail />} text={"email@gmail.com"}/></Link>
-            <Link href={"https://instagram.com/ichutchev"} target={"_blanc"}><Contact icon={<Instagram />} text={"@instagram"}/></Link>
+            <Link href={"https://t.me/chutchev"} target={"_blanc"}><Contact icon={<Telegram/>}
+                                                                            text={"@Telegram"}/></Link>
+            <Link href={""} target={"_blanc"}><Contact icon={<LinkedIn/>} text={"linkedIn"}/></Link>
+            <Link href={"mailto:ichutchev98@gmail.com?subject=Собеседование"}><Contact icon={<Gmail/>}
+                                                                                       text={"email@gmail.com"}/></Link>
+            <Link href={"https://instagram.com/ichutchev"} target={"_blanc"}><Contact icon={<Instagram/>}
+                                                                                      text={"@instagram"}/></Link>
         </div>
     </div>)
 }

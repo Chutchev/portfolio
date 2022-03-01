@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import mp3Sound from "../../static/sound/menu_sword.mp3"
 
 
 interface ILink {
@@ -21,7 +22,13 @@ const ALink = styled.a`
 `
 const Link = (props:ILink) => {
     const target = props.target? props.target: "_self"
-    return <ALink href={props.href} target={target}>{props.children}</ALink>
+    let audio = new Audio(mp3Sound);
+    audio.volume = 0.5
+    const playAudio = ()=>
+    {
+        audio.play()
+    }
+    return <ALink href={props.href} target={target} onMouseEnter={()=>{playAudio()}}>{props.children}</ALink>
 }
 
 export default Link

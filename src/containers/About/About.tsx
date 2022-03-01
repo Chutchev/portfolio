@@ -68,7 +68,7 @@ const AboutPage = () => {
         }
     }
     return (
-        <div style={{height: "auto"}}>
+        <div style={{height: "100vh"}}>
             <div className={"myName"} style={nameStyle}>
                 <Name/>
             </div>

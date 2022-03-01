@@ -4,7 +4,8 @@ import Link from "./MenuLink";
 const Menu = ()=>{
     const menuStyle = {
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "center",
+        flex: "0 0 auto"
     }
     return (
         <div className={"Menu"} style={menuStyle}>
