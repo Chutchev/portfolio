@@ -10,7 +10,7 @@ const Image = styled.div`
 `
 
 const Text = styled.div`
-    font-size: 48px;
+    font-size: 100%;
     color: #FFF;
     margin-left: 11px;
 `
@@ -18,6 +18,7 @@ const Contact = (props: IContact) => {
     const styleContact = {
         display: "flex",
         marginLeft: "7%",
+        marginTop: "50px"
     }
     return (<div style={styleContact}>
         <Image className={"image"}>{props.icon}</Image>

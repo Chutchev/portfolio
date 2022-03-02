@@ -16,13 +16,19 @@ const AnimationName = keyframes`
     transform: scaleX(0) scaleY(0);
 }
 100% {
-    transform: scaleX(120%) scaleY(120%);
+    transform: scaleX(100%) scaleY(100%);
 }
 `
-
+const ContactLine = styled.div`
+display: flex; 
+justify-content: space-around;
+align-items: center;
+margin-top: 7px;
+`
 const StyledContactsDiv = styled.div`
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-direction: column;
 `
@@ -36,21 +42,26 @@ const NameDiv = styled.div`
 `
 const StyledContact = styled.div`
     display: flex;
-    margin-top: 7%; 
+    margin-top: 7%;
+    flex-direction: column;
 `
 const Contacts = () => {
     return (<StyledContactsDiv className={"CONTACTS PAGE"}>
-        <NameDiv className={"myName"}>
-            <Name/>
-        </NameDiv>
         <StyledContact className={"content"}>
-            <Link href={"https://t.me/chutchev"} target={"_blanc"}><Contact icon={<Telegram/>}
-                                                                            text={"@Telegram"}/></Link>
-            <Link href={""} target={"_blanc"}><Contact icon={<LinkedIn/>} text={"linkedIn"}/></Link>
-            <Link href={"mailto:ichutchev98@gmail.com?subject=Собеседование"}><Contact icon={<Gmail/>}
-                                                                                       text={"email@gmail.com"}/></Link>
-            <Link href={"https://instagram.com/ichutchev"} target={"_blanc"}><Contact icon={<Instagram/>}
-                                                                                      text={"@instagram"}/></Link>
+            <ContactLine>
+                <Link href={"https://t.me/chutchev"} target={"_blanc"}><Contact icon={<Telegram/>}
+                                                                                text={"@Telegram"}/></Link>
+                <Link href={""} target={"_blanc"}><Contact icon={<LinkedIn/>} text={"linkedIn"}/></Link>
+            </ContactLine>
+            <NameDiv className={"myName"}>
+                <Name/>
+            </NameDiv>
+            <ContactLine>
+                <Link href={"mailto:ichutchev98@gmail.com?subject=Собеседование"}><Contact icon={<Gmail/>}
+                                                                                           text={"email@gmail.com"}/></Link>
+                <Link href={"https://instagram.com/ichutchev"} target={"_blanc"}><Contact icon={<Instagram/>}
+                                                                                          text={"@instagram"}/></Link>
+            </ContactLine>
         </StyledContact>
     </StyledContactsDiv>)
 }
