@@ -1,16 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 interface IContact {
     icon: React.ReactNode,
     text: string,
 }
 
 const Image = styled.div`
-    filter: invert(100%)
+    filter: invert(100%);
 `
 
 const Text = styled.div`
-    font-size: 72px;
+    font-size: 100%;
     color: #FFF;
     margin-left: 11px;
 `
@@ -18,6 +18,7 @@ const Contact = (props: IContact) => {
     const styleContact = {
         display: "flex",
         marginLeft: "7%",
+        marginTop: "50px"
     }
     return (<div style={styleContact}>
         <Image className={"image"}>{props.icon}</Image>
