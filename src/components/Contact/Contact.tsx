@@ -18,7 +18,6 @@ const Contact = (props: IContact) => {
     const styleContact = {
         display: "flex",
         marginLeft: "7%",
-        marginTop: "50px"
     }
     return (<div style={styleContact}>
         <Image className={"image"}>{props.icon}</Image>

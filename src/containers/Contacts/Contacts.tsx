@@ -37,7 +37,6 @@ const NameDiv = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 1%;
         animation: ${AnimationName} 1s 1 linear;
 `
 const StyledContact = styled.div`
@@ -48,7 +47,7 @@ const StyledContact = styled.div`
 const Contacts = () => {
     return (<StyledContactsDiv className={"CONTACTS PAGE"}>
         <StyledContact className={"content"}>
-            <ContactLine>
+            <ContactLine style={{marginBottom: "10%"}}>
                 <Link href={"https://t.me/chutchev"} target={"_blanc"}><Contact icon={<Telegram/>}
                                                                                 text={"@Telegram"}/></Link>
                 <Link href={""} target={"_blanc"}><Contact icon={<LinkedIn/>} text={"linkedIn"}/></Link>
@@ -56,7 +55,7 @@ const Contacts = () => {
             <NameDiv className={"myName"}>
                 <Name/>
             </NameDiv>
-            <ContactLine>
+            <ContactLine style={{marginTop: "10%"}}>
                 <Link href={"mailto:ichutchev98@gmail.com?subject=Собеседование"}><Contact icon={<Gmail/>}
                                                                                            text={"email@gmail.com"}/></Link>
                 <Link href={"https://instagram.com/ichutchev"} target={"_blanc"}><Contact icon={<Instagram/>}
